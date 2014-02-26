@@ -3,60 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Nicole De La Feld</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
     <link href='http://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='normalize.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
   <div class="home">
     <div class="header">
-      <div class="logo" class="clearfix">
+      <div class="logo clearfix">
         <h1>Nicole De La Feld</h1>
         <img id="colibri" src="colibri.png">
       </div>
-      <div class="navbar" class="clearfix">
-        <li><a href="#about">ABOUT ME</a></li>
-        <li><a href="#work">MY WORK</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+      <div class="navbar">
+        <ul>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#work">MY WORK</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
       
     </div>
-    <div class="presentation" class="clearfix">
-     <div class="social" class="clearfix">
-      <ul class="social list">
-        <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" class="ir" target="_blank"><img src="linkedin-16x16.png" alt="Linkedin"></a></li>
-        <li class="github"><a href="https://github.com/nicky1525" class="ir" target="_blank"><img src="github-16x16.png" alt="GitHub"></a></li>
-        <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" class="ir" target="_blank"><img src="github-16x16.png" alt="Stackoverflow"></a></li>
-        <li class="twitter"><a href="https://twitter.com/n_delafeld" class="ir" target="_blank"><img src="github-16x16.png" alt="Twitter"></a></li>
-      </ul> 
-    </div>
+    <div class="presentation">
+      <div class="social">
+        <ul class="social list">
+          <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><img src="linkedin-16x16.png" alt="Linkedin"></a></li>
+          <li class="github"><a href="https://github.com/nicky1525" target="_blank"><img src="github-16x16.png" alt="GitHub"></a></li>
+          <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><img src="github-16x16.png" alt="Stackoverflow"></a></li>
+          <li class="twitter"><a href="https://twitter.com/n_delafeld" target="_blank"><img src="github-16x16.png" alt="Twitter"></a></li>
+        </ul> 
+      </div>
     <img src="tramonto1.jpg">
     </div>
   </div>
 
-  <div class="work" id="work" class="clearfix">
+  <div id="work">
     <p>Here is a collection of my latest web and mobile applications. You can also find them on <a href="https://github.com/nicky1525" data-hover = "GitHub">GitHub</a>.<br> Every contribution to my repositories is welcome!</p>
     <div class="row">
       <div class="col-lg-4">
-        <a href="https://github.com/nicky1525/UniApp" class="ir" target="_blank"><img src="github-16x16.png" alt="UniApp"></a>
+        <a href="https://github.com/nicky1525/UniApp" target="_blank"><img src="github-16x16.png" alt="UniApp"></a>
         <h2>UniApp</h2>
         <p>A simple Android application for students.</p>
       </div>
       <div class="col-lg-4">
-        <a href="https://github.com/nicky1525/Rock-Paper-Scissors" class="ir" target="_blank"><img src="github-16x16.png" alt="Rock-Paper-Scissors"></a>
+        <a href="https://github.com/nicky1525/Rock-Paper-Scissors" target="_blank"><img src="github-16x16.png" alt="Rock-Paper-Scissors"></a>
         <h2>Rock-Paper-Scissors</h2>
         <p>The classic game rebuilt in Vanilla JavaScript.
         Here you can find the source code and here you can play with the live demo.</p>
       </div>
       <div class="col-lg-4">
-        <a href="https://github.com/nicky1525/my-cv-template" class="ir" target="_blank"><img src="github-16x16.png" alt="My CV"></a>
+        <a href="https://github.com/nicky1525/my-cv-template" target="_blank"><img src="github-16x16.png" alt="My CV"></a>
         <h2>My Cv</h2>
         <p>My CV HTML template.</p>
+      </div>
     </div>   
   </div>
   
-  <div class="about" id="about" class="clearfix">
+  <div class="about" id="about">
     <h3>About Me</h3>
     <img src="nicole.jpg">
     <p>I am a young passionate developer based in Italy.</p>
@@ -75,7 +80,7 @@
     <p>In conclusion let me thank that special people I mentioned before, who helped and supported me during this year.</p>
   </div>
   
-  <div class="contact" id="contact" class="clearfix">
+  <div class="contact" id="contact">
       <ul class="social list">
         <li class="mail"><a href="http://facebook.com/heandshephoto" class="ir">Email</a></li>
         <li class="linkedin"><a href="http://twitter.com/heandshe" class="ir">Linkedin</a></li>

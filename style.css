@@ -32,9 +32,7 @@ button {
   margin-left: 25%;
 }
 
-ul {
-  margin:auto;
-}
+
 
 .header {
   width: 100%;
@@ -45,12 +43,16 @@ ul {
 .logo {
   height: 100%;
   width: 40%;
-  display: inline-block;
+  min-width: 350px;
+}
 
+.logo,
+.logo h1,
+.logo img {
+  float: left;
 }
 
 .logo h1 {
-  float: left;
   color:#36A099;
   margin:auto;
 }
@@ -61,34 +63,41 @@ ul {
 }
 
 .navbar {
-  padding-left: 10rem;
+  /*padding-left: 10rem;*/
   float: right;
-  height:100px;
-  padding-top: 40px;
+ 
   width: 50%;
-  display: inline-block;
+  
+}
+
+.navbar > ul {
+
+  list-style: none;
 }
 
 .navbar li {
-  display: inline-block;
+  float: left;
+  width: 33%;
 }
 
 .social {
   position: absolute;
-  margin-top: 1%;
-  float: right;
+  top: 1%;
+  right: 3%;
 }
 
 .social li {
   display: inline;
 }
 
+.presentation {
+  position: relative;
+}
+
 .presentation img {
   width: 100%;
-  position: relative;
   border-top: solid 4px #36A099;
   border-bottom: solid 4px #36A099;
-  float: left;
   margin-bottom: 3em;
 }
 
