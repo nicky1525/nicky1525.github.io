@@ -151,3 +151,10 @@ button {
 /*ABOUT SECTION*/
 
 
+/* MEDIA QUERIES */
+@media only screen and (max-width: 869px) {
+  .col-lg-4 {
+    width: 100%;
+  }
+
+}
