@@ -65,9 +65,7 @@ button {
 .navbar {
   /*padding-left: 10rem;*/
   float: right;
- 
   width: 50%;
-  
 }
 
 .navbar > ul {
@@ -83,10 +81,10 @@ button {
 .social {
   position: absolute;
   top: 1%;
-  right: 3%;
+  right: 5%;
 }
 
-.social li {
+.social-list li {
   display: inline;
 }
 
@@ -94,23 +92,21 @@ button {
   position: relative;
 }
 
-.presentation img {
+.presentation > img {
   width: 100%;
   border-top: solid 4px #36A099;
   border-bottom: solid 4px #36A099;
-  margin-bottom: 3em;
 }
 
 /*WORK SECTION*/
 
-
-.work {
-  padding-top: 3rem;
+#work {
+  padding-top: 1rem;
   text-align: center;
   margin-bottom: 3em;
 }
 
-.work p {
+#work p {
   margin-bottom: 3em;
 }
 .col-lg-4 {
@@ -118,5 +114,21 @@ button {
   width: 33%;
 }
 
+#uniapp {
+  height: 180px;
+  width: 100px;
+}
+
+#rps {
+  height: 250px;
+  width: 310px;
+}
+
+#cv {
+  height: 250px;
+  width: 190px;
+}
+
+/*ABOUT SECTION*/
 
 
