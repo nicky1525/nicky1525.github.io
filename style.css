@@ -59,7 +59,7 @@ body {
   margin:auto;
   height: 100%;
   width: 100%;
-  font-family: 'quicksandregular';
+  font-family: 'quicksanditalic';
   font-size: 20px;
   line-height: 140%;
 }
@@ -73,7 +73,7 @@ button {
   display: block;
 }
 
-.home a {
+.navbar a {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
@@ -111,7 +111,6 @@ button {
 }
 
 .navbar {
-  /*padding-left: 10rem;*/
   float: right;
   width: 50%;
 }
@@ -129,11 +128,23 @@ button {
 .social {
   position: absolute;
   top: 1%;
-  right: 5%;
+  right: 2%;
 }
 
 .social-list li {
-  display: inline;
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+
+.social li a {
+  text-shadow: -1px 0px 11px #888;
+}
+
+.social li a :hover {
+  color: #36A099; 
+  font-size: 150%;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .presentation {
@@ -168,7 +179,9 @@ button {
 
 #work p {
   margin-bottom: 3em;
+  padding:10px;
 }
+
 .col-lg-4 {
   float: left;
   width: 33.333333333333%;
@@ -198,10 +211,49 @@ button {
 
 /*ABOUT SECTION*/
 
+#about {
+  text-align: center;
+}
+
+#about p {
+  padding: 0 30px 0 30px;
+}
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 869px) {
+@media only screen and (max-width: 880px) {
   .col-lg-4 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 919px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 937px) {
+  .fa {
+    font-size: 80%;
+  }
+    
+  .social-list li span {
+    height: 0;
+  }
+
+  .social-list li {
+      height: 40px;
+      width: 40px;
+  }
+
+  .social-list li a:hover {
+    font-size: 90%;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (max-width: 1127px) {
+  .logo {
     width: 100%;
   }
 }
