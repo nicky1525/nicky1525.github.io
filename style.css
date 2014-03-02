@@ -59,13 +59,13 @@ body {
   margin:auto;
   height: 100%;
   width: 100%;
-  font-family: 'quicksanditalic';
+  font-family: 'quicksandbold';
   font-size: 20px;
   line-height: 140%;
 }
 
 h1 {
-  font-family: 'alex_brushregular', cursive;
+  font-family: 'Herr Von Muellerhoff', cursive;
   font-size: 50px;
 }
 
@@ -78,6 +78,7 @@ button {
   color:#36A099; 
   font-family: 'Lilita One', cursive;
   margin-left: 25%;
+  font-size: 20px;
 }
 
 
@@ -219,6 +220,18 @@ button {
   padding: 0 30px 0 30px;
 }
 
+
+/*CONTACT*/
+
+#contact {
+  background-color: #36A099;
+  height: 300px;
+}
+
+#contact li {
+  display: inline;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 880px) {
   .col-lg-4 {
@@ -256,4 +269,11 @@ button {
   .logo {
     width: 100%;
   }
+}
+
+.has-success {
+  background: green;
+}
+.has-error {
+  background: rgba(255,0,0,.6);
 }

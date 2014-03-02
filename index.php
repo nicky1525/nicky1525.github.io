@@ -1,3 +1,14 @@
+<?php
+
+if (isset($_POST['submit'])) {
+  // User submitted the contact form
+  // let's send us an email
+  include 'mailer.php';  
+}
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,12 +17,24 @@
     
     
     <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='normalize.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+
+  <?php if (isset($mail_sent) && $mail_sent) { ?>
+  <div class="has-success">
+    Thank you! I got your message and I'll reply to you soon.
+  </div>
+  <?php } else if (isset($mail_sent)) { ?>
+  <div class="has-error">
+    There was a problem. Please try again.
+  </div>
+  <?php } ?>
+
   <div class="home">
     <div class="header clearfix">
       <div class="logo clearfix">
@@ -99,15 +122,40 @@
   </div>
   
   <div class="contact" id="contact">
-      <ul class="social-list">
-        <li class="mail"><a href="http://facebook.com/heandshephoto" class="ir">Email</a></li>
-        <li class="linkedin"><a href="http://twitter.com/heandshe" class="ir">Linkedin</a></li>
-        <li class="github"><a href="http://instagram.com/heandshephoto" class="ir">Github</a></li>
-        <li class="stackoverflow"><a href="http://pinterest.com/heandshe/" class="ir">Stackoverflow</a></li>
-      </ul> 
-  </div>
-  <div class="footer">
-    footer
+    <ul class="social-list clearfix">
+        <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-lg">
+        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+        <li class="github"><a href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-lg">
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+        <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-lg">
+        <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+        <li class="twitter"><a href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-lg">
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+         <li class="google+"><a href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-lg">
+        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+        <li class="mail"><a href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-lg">
+        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span></a></li>
+      </ul>
+
+
+    <form method="post">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text">
+      <br>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="sam@sample.com">
+      <br>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <br>
+      <input type="submit" name="submit" value="Send">
+    </form>
+
   </div>
 </body>
 </html>
