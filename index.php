@@ -102,6 +102,17 @@ if (isset($_POST['submit'])) {
       </div>
     </div>   
   </div>
+  <div id="divider">
+    <span class="fa-stack fa-sm">
+        <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="fa-stack fa-sm">
+        <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+    </span>
+    <span class="fa-stack fa-sm">
+        <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+    </span>
+  </div>
   
   <div class="about clearfix" id="about">
     <h3>About Me</h3>
@@ -116,18 +127,21 @@ if (isset($_POST['submit'])) {
     I started by studying the OOP basics, Java and Android SDK and then, during my intern, I studied C#, Objective-C and iOS SDK, through which I developed four mobile applications.</p>
     <p>Now, driven by my curiosity and supported by special people, I am focusing my attention on web development and I am increasing my knowledge of HTML5,CSS3, JavaScript and also Python and PHP. I really enjoy these technologies!
     My final goal is to master my professional skills in an agile environment, producing extreme quality software.</p>
-    <h3>About this website:</h3>
+    <h3>About this website</h3>
     <p>This is my first website and its purpouse, for now, is to gather up all my works and ideas in order to share them with everyone who has the same passion that drives my work.</p>
 
     <p>In conclusion let me thank that special people I mentioned before, who helped and supported me during this year.</p>
   </div>
   
   <div id="contact">
-    <div class="phrase">
-      <small>Share your ideas and suggestions with me.. </small>
+    <div class="col1 clearfix">
+      <small>Share your ideas and suggestions with me.. </small><br>
+      <small>Keep in Touch! </small>
+      <span class="fa-stack fa-sm">
+      <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
     </div>
     <ul class="social-list clearfix">
-      <small><p>You can contact me using the form to your left, alternatively you can use one of the links below:</p></small>
+      <small><p>You can contact me using the contact form, alternatively you can use one of the links below:</p></small>
       <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span></a></li>
@@ -136,7 +150,7 @@ if (isset($_POST['submit'])) {
       </span></a></li>
       <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
-      </span></a></li>
+      </span></a></li><br>
       <li class="twitter"><a href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
       </span></a></li>
