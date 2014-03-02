@@ -36,21 +36,32 @@ if (isset($_POST['submit'])) {
   </div>
   <?php } ?>
 
-  <div class="home">
+<div class="navbar-hidden hidden">
+      <div class="logo1 clearfix pop">
+        <a href="#home"><h1>Nicole De La Feld</h1></a>
+        <img id="colibri" src="colibri.png">
+      </div>
+       <ul>
+          <li><a class="pop" href="#about">ABOUT ME</a></li>
+          <li><a class="pop" href="#work">MY WORK</a></li>
+          <li><a class="pop" href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+  <div class="home" id="home">
     <div class="header clearfix">
-      <div class="logo clearfix">
-        <h1>Nicole De La Feld</h1>
+      <div class="logo clearfix pop">
+        <a href="#home"><h1>Nicole De La Feld</h1></a>
         <img id="colibri" src="colibri.png">
       </div>
       <div class="navbar">
         <ul>
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#work">MY WORK</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a class="float-shadow" href="#about">ABOUT ME</a></li>
+          <li><a class="float-shadow" href="#work">MY WORK</a></li>
+          <li><a class="float-shadow" href="#contact">CONTACT</a></li>
         </ul>
       </div>
-      
     </div>
+
     <div class="presentation">
       <div class="social">
         <ul class="social-list clearfix">
@@ -76,7 +87,7 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div id="work" class="clearfix">
-    <p>Here is a collection of my latest web and mobile applications. You can also find them on <a href="https://github.com/nicky1525" data-hover = "GitHub">GitHub</a>.<br> Every contribution to my repositories is welcome!</p>
+    <p>Here is a collection of my latest web and mobile applications. You can also find them on <a class="pop" href="https://github.com/nicky1525" data-hover = "GitHub">GitHub</a>.<br> Every contribution to my repositories is welcome!</p>
     <div class="row clearfix">
       <div class="col-lg-4">
         <div class="imgcol">
@@ -90,7 +101,7 @@ if (isset($_POST['submit'])) {
           <a href="https://github.com/nicky1525/Rock-Paper-Scissors" target="_blank"><img id="rps" src="rspmac.png" alt="Rock-Paper-Scissors"></a>
         </div>
         <a href="https://github.com/nicky1525/Rock-Paper-Scissors" target="_blank"><h2>Rock-Paper-Scissors</h2></a>
-        <p>The classic game rebuilt in Vanilla JavaScript.Take a break and <a href="http://delafeld.it/Rock-Paper-Scissors">Play!</a>
+        <p>The classic game rebuilt in Vanilla JavaScript.Take a break and <a class="pop" href="http://delafeld.it/Rock-Paper-Scissors">Play!</a>
         </p>
       </div>
       <div class="col-lg-4">
@@ -142,22 +153,22 @@ if (isset($_POST['submit'])) {
     </div>
     <ul class="social-list clearfix">
       <small><p>You can contact me using the contact form, alternatively you can use one of the links below:</p></small>
-      <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-sm">
+      <li class="linkedin"><a class="pop" href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
       </span></a></li>
-      <li class="github swing"><a href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-sm">
+      <li class="github swing"><a class="pop" href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-github fa-stack-1x fa-inverse"></i>
       </span></a></li>
-      <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-sm">
+      <li class="stackoverflow"><a class="pop" href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
       </span></a></li><br>
-      <li class="twitter"><a href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-sm">
+      <li class="twitter"><a class="pop" href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
       </span></a></li>
-       <li class="google+"><a href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-sm">
+       <li class="google+"><a class="pop" href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
       </span></a></li>
-      <li class="mail"><a href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-sm">
+      <li class="mail"><a class="pop" href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-sm">
       <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
       </span></a></li>
     </ul>
@@ -173,7 +184,8 @@ if (isset($_POST['submit'])) {
       <br>
       <input  id="btnsend" type="submit" name="submit" value="Send">
     </form>
-
   </div>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="js/sliding.js"></script>
 </body>
 </html>
