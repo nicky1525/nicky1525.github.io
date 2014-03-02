@@ -186,6 +186,6 @@ if (isset($_POST['submit'])) {
     </form>
   </div>
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="js/sliding.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
