@@ -81,8 +81,6 @@ button {
   font-size: 20px;
 }
 
-
-
 .header {
   width: 100%;
   padding: 1.5em;
@@ -214,22 +212,44 @@ button {
 
 #about {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 #about p {
   padding: 0 30px 0 30px;
 }
 
-
 /*CONTACT*/
 
 #contact {
   background-color: #36A099;
-  height: 300px;
+  height: 400px;
+  padding: 20px;
+  color: #fff;
 }
 
-#contact li {
+#contact ul {
+  float: right;
+  width: 40%;
+}
+
+#contact ul li {
   display: inline;
+}
+/*Non funge!*/
+#contact ul li a:hover {
+  color: #15195B;
+}
+
+#name, #email, #message, #btnsend {
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 0 10px 0 10px;
+  border:none;
+}
+
+#btnsend {
+ margin-left: 250px;
 }
 
 /* MEDIA QUERIES */

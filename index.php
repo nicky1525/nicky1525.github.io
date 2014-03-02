@@ -121,29 +121,32 @@ if (isset($_POST['submit'])) {
     <p>In conclusion let me thank that special people I mentioned before, who helped and supported me during this year.</p>
   </div>
   
-  <div class="contact" id="contact">
+  <div id="contact">
+    <div class="phrase">
+      <small>Share your ideas and suggestions with me.. </small>
+    </div>
     <ul class="social-list clearfix">
-        <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-lg">
-        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-        </span></a></li>
-        <li class="github"><a href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-lg">
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-        </span></a></li>
-        <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-lg">
-        <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
-        </span></a></li>
-        <li class="twitter"><a href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-lg">
-        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-        </span></a></li>
-         <li class="google+"><a href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-lg">
-        <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-        </span></a></li>
-        <li class="mail"><a href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-lg">
-        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-        </span></a></li>
-      </ul>
-
-
+      <small><p>You can contact me using the form to your left, alternatively you can use one of the links below:</p></small>
+      <li class="linkedin"><a href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-sm">
+      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+      </span></a></li>
+      <li class="github swing"><a href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-sm">
+      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span></a></li>
+      <li class="stackoverflow"><a href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-sm">
+      <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+      </span></a></li>
+      <li class="twitter"><a href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-sm">
+      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span></a></li>
+       <li class="google+"><a href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-sm">
+      <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+      </span></a></li>
+      <li class="mail"><a href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-sm">
+      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+      </span></a></li>
+    </ul>
+    
     <form method="post">
       <label for="name">Name</label>
       <input id="name" name="name" type="text">
@@ -153,7 +156,7 @@ if (isset($_POST['submit'])) {
       <br>
       <textarea name="message" id="message" cols="30" rows="10"></textarea>
       <br>
-      <input type="submit" name="submit" value="Send">
+      <input  id="btnsend" type="submit" name="submit" value="Send">
     </form>
 
   </div>
