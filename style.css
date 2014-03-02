@@ -59,7 +59,7 @@ body {
   margin:auto;
   height: 100%;
   width: 100%;
-  font-family: 'quicksandbold';
+  font-family: 'Fanwood Text', serif;
   font-size: 20px;
   line-height: 140%;
 }
@@ -224,8 +224,9 @@ button {
 #contact {
   background-color: #36A099;
   height: 400px;
-  padding: 20px;
+  padding: 20px 100px 10px 100px;
   color: #fff;
+  font-family: 'quicksandbold';
 }
 
 #contact ul {
@@ -239,6 +240,10 @@ button {
 /*Non funge!*/
 #contact ul li a:hover {
   color: #15195B;
+}
+
+.phrase {
+  margin-bottom: 20px;
 }
 
 #name, #email, #message, #btnsend {
