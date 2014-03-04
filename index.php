@@ -45,17 +45,16 @@ if (isset($_POST['submit'])) {
   </div>
   <?php } ?>
 
-<div class="navbar-hidden hidden">
-      <div class="logo1 clearfix">
-        <a href="#home"><h1>Nicole De La Feld</h1></a>
-        <img id="colibri" src="colibri.png">
-      </div>
-       <ul>
-          <li><a class="pop" href="#about">ABOUT ME</a></li>
-          <li><a class="pop" href="#work">MY WORK</a></li>
-          <li><a class="pop" href="#contact">CONTACT</a></li>
-        </ul>
-    </div>
+  <div class="navbar-hidden hidden">
+   
+      <a href="#home"><img id="colibri" src="colibri.png"></a>
+    
+    <ul>
+      <li><a class="pop" href="#about">ABOUT ME</a></li>
+      <li><a class="pop" href="#work">MY WORK</a></li>
+      <li><a class="pop" href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
   <div class="home" id="home">
     <div class="header clearfix">
       <div class="logo clearfix">
