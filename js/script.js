@@ -25,12 +25,12 @@ function slide(){
   });
 }
 
-function pop() {
+window.pop = function pop() {
   var counter = 60;
 
   var box = document.createElement('div');
   var label = document.createElement('span');
-  label.innerText = counter;
+  label.innerText = "Thank you! I got your message and will reply to you soon!";
   box.appendChild(label);
 
   // Position box and label as you wish.

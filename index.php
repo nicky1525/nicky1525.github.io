@@ -23,12 +23,24 @@ if (isset($_POST['submit'])) {
     <link href='normalize.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48592259-1', 'delafeld.it');
+      ga('send', 'pageview');
+    </script>
 </head>
 <body>
 
   <?php if (isset($mail_sent) && $mail_sent) { ?>
   <div class="has-success">
-    Thank you! I got your message and I'll reply to you soon.
+    <script>
+      pop();
+    </script>
+    <!--Thank you! I got your message and I'll reply to you soon.-->
   </div>
   <?php } else if (isset($mail_sent)) { ?>
   <div class="has-error">
@@ -145,45 +157,52 @@ if (isset($_POST['submit'])) {
   </div>
   
   <div id="contact">
-    <div class="col1 clearfix">
+    <div class="row clearfix">
       <small>Share your ideas and suggestions with me.. </small><br>
       <small>Keep in Touch! </small>
       <span class="fa-stack fa-sm">
-      <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-comments-o fa-stack-1x fa-inverse"></i></span><br>
+      <div id="form" class=" col1 clearfix">
+        <form method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text">
+          <br>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="sam@sample.com">
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br>
+          <input  id="btnsend" type="submit" name="submit" value="Send">
+        </form>
+      </div>
+      <div class="col2 clearfix">
+        <small><p>You can contact me using the contact form, alternatively you can use one of the links below:</p></small>
+        <ul class="social-list">
+          <li class="linkedin"><a class="pop" href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-sm">
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span></a></li>
+          <li class="github swing"><a class="pop" href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-sm">
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+          </span></a></li>
+          <li class="stackoverflow"><a class="pop" href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-sm">
+          <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+          </span></a></li><br>
+          <li class="twitter"><a class="pop" href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-sm">
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span></a></li>
+           <li class="google+"><a class="pop" href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-sm">
+          <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+          </span></a></li>
+          <li class="mail"><a class="pop" href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-sm">
+          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+          </span></a></li>
+        </ul>
+      </div>
     </div>
-    <ul class="social-list clearfix">
-      <small><p>You can contact me using the contact form, alternatively you can use one of the links below:</p></small>
-      <li class="linkedin"><a class="pop" href="http://www.linkedin.com/in/nicoledelafeld" target="_blank"><span class="fa-stack fa-sm">
-      <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span></a></li>
-      <li class="github swing"><a class="pop" href="https://github.com/nicky1525" target="_blank"><span class="fa-stack fa-sm">
-      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span></a></li>
-      <li class="stackoverflow"><a class="pop" href="http://stackoverflow.com/users/2762447/nicky-1525" target="_blank"><span class="fa-stack fa-sm">
-      <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
-      </span></a></li><br>
-      <li class="twitter"><a class="pop" href="https://twitter.com/n_delafeld" target="_blank"><span class="fa-stack fa-sm">
-      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-      </span></a></li>
-       <li class="google+"><a class="pop" href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-sm">
-      <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-      </span></a></li>
-      <li class="mail"><a class="pop" href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-sm">
-      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-      </span></a></li>
-    </ul>
-    
-    <form method="post">
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text">
-      <br>
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" placeholder="sam@sample.com">
-      <br>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
-      <br>
-      <input  id="btnsend" type="submit" name="submit" value="Send">
-    </form>
+
+    <div id="divider-contact">
+      <small>Built with<span class="fa-stack fa-sm"><i class="fa fa-heart fa-stack-1x fa-inverse"></i></span> by me</small>
+    </div>
   </div>
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="js/script.js"></script>
