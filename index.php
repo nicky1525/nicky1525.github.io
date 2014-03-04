@@ -37,10 +37,7 @@ if (isset($_POST['submit'])) {
 
   <?php if (isset($mail_sent) && $mail_sent) { ?>
   <div class="has-success">
-    <script>
-      pop();
-    </script>
-    <!--Thank you! I got your message and I'll reply to you soon.-->
+    Thank you! I got your message and I'll reply to you soon.
   </div>
   <?php } else if (isset($mail_sent)) { ?>
   <div class="has-error">
@@ -49,7 +46,7 @@ if (isset($_POST['submit'])) {
   <?php } ?>
 
 <div class="navbar-hidden hidden">
-      <div class="logo1 clearfix pop">
+      <div class="logo1 clearfix">
         <a href="#home"><h1>Nicole De La Feld</h1></a>
         <img id="colibri" src="colibri.png">
       </div>
@@ -61,7 +58,7 @@ if (isset($_POST['submit'])) {
     </div>
   <div class="home" id="home">
     <div class="header clearfix">
-      <div class="logo clearfix pop">
+      <div class="logo clearfix">
         <a href="#home"><h1>Nicole De La Feld</h1></a>
         <img id="colibri" src="colibri.png">
       </div>

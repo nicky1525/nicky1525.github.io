@@ -504,7 +504,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 919px) {
+@media only screen and (max-width: 1130px) {
   .navbar {
     width: 100%;
     margin-bottom: 20px;
