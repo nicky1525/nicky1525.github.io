@@ -540,7 +540,9 @@ button {
 
 .has-success {
   background: green;
+  color: #fff;
 }
 .has-error {
   background: rgba(255,0,0,.6);
+  color: #fff;
 }
