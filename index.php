@@ -147,7 +147,7 @@ if (isset($_POST['submit'])) {
     <p>Now, driven by my curiosity and supported by special people, I am focusing my attention on web development and I am increasing my knowledge of HTML5,CSS3, JavaScript and also Python and PHP. I really enjoy these technologies!
     My final goal is to master my professional skills in an agile environment, producing extreme quality software.</p>
     <h3>About this website</h3>
-    <p>This is my first website and its purpouse, for now, is to gather up all my works and ideas in order to share them with everyone who has the same passion that drives my work.</p>
+    <p>This is my first website and its purpose, for now, is to gather up all my works and ideas in order to share them with everyone who has the same passion that drives my work.</p>
 
     <p>In conclusion let me thank that special people I mentioned before, who helped and supported me during this year.</p>
   </div>
