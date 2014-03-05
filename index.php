@@ -189,7 +189,7 @@ if (isset($_POST['submit'])) {
            <li class="google+"><a class="pop" href="https://plus.google.com/u/0/108657212883457727591/posts/p/pub" target="_blank"><span class="fa-stack fa-sm">
           <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
           </span></a></li>
-          <li class="mail"><a class="pop" href="http://facebook.com/heandshephoto" target="_blank"><span class="fa-stack fa-sm">
+          <li class="mail"><a class="pop" href="mailto:nicole@delafeld.it"><span class="fa-stack fa-sm">
           <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
           </span></a></li>
         </ul>
