@@ -27,7 +27,10 @@ $("form").on("submit", function(event) {
   event.preventDefault();
 
   // send an email via AJAX
-  $.ajax("mailer.php").success(function(data) {
+  $.ajax("mailer.php", {
+    type: "POST",
+    data: $(this).serialize()
+  }).success(function(data) {
 
     var jsonString = JSON.parse(data);
     $(".modal").html(jsonString.message).fadeIn().delay(2000).fadeOut('slow');
