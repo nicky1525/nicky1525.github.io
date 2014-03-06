@@ -23,30 +23,6 @@ var previousScroll = 0,
   });
 
 
-window.pop = function pop() {
-  var counter = 60;
-
-  var box = document.createElement('div');
-  var label = document.createElement('span');
-  label.innerText = "Thank you! I got your message and will reply to you soon!";
-  box.appendChild(label);
-
-  // Position box and label as you wish.
-
-  function tick() {
-    counter--;
-    if (counter == 0) {
-      window.close();
-    } else {
-      label.innerText = counter;
-      setTimeout(tick, 1000);
-    }
-  }
-
-  setTimeout(tick, 1000);
-}
-
-
 $("form").on("submit", function(event) {
   // prevent form submission
   event.preventDefault();
