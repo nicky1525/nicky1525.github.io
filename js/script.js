@@ -45,3 +45,17 @@ window.pop = function pop() {
 
   setTimeout(tick, 1000);
 }
+
+
+$("form").on("submit", function(event) {
+  // prevent form submission
+  event.preventDefault();
+
+  // send an email via AJAX
+  $.ajax("mailer.php").success(function(data) {
+
+    var jsonString = JSON.parse(data);
+    alert(jsonString.message);
+
+  });
+});
