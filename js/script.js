@@ -4,8 +4,7 @@ var previousScroll = 0,
 
   $(window).scroll(function() {
       var currentScroll = $(this).scrollTop();
-      console.log(currentScroll + " and " + previousScroll + " and " + headerOrgOffset);
-      if(currentScroll > headerOrgOffset) {
+      if (currentScroll > headerOrgOffset) {
           if (currentScroll < previousScroll) {
               $('.navbar-hidden').animate({
                    top: '-70px'      //Change to Height of navbar
@@ -31,7 +30,7 @@ $("form").on("submit", function(event) {
   $.ajax("mailer.php").success(function(data) {
 
     var jsonString = JSON.parse(data);
-    alert(jsonString.message);
+    $(".modal").html(jsonString.message).fadeIn().delay(2000).fadeOut('slow');
 
   });
 });

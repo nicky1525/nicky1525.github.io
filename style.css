@@ -554,3 +554,21 @@ button {
   background: rgba(255,0,0,.6);
   color: #fff;
 }
+
+.modal {
+  position: fixed;
+  width: 320px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -160px;
+  
+  background: rgba(255,255,255,1);
+  box-shadow: 0 0 36px 36px rgba(0,0,0,.1);
+  border-radius: 12px;
+
+  display: none;
+}
