@@ -483,6 +483,14 @@ button {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 753px) {
+  .navbar a {
+    margin-left: 10%;
+    font-size: 1.8em;
+  }
+}
+
+
 @media (max-width: 767px) {
   body {
     /* double font size for mobile users */
