@@ -63,6 +63,10 @@
           box-sizing: border-box;
 }
 
+html {
+  background: #36A099;  
+}
+
 body {
   margin:auto;
   height: 100%;
@@ -71,11 +75,12 @@ body {
   font-size: 20px;
   line-height: 140%;
   color:#848484;
+  background: white;
 }
 
 h1 {
   font-family: 'Herr Von Muellerhoff', cursive;
-  font-size: 50px;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -91,7 +96,6 @@ button {
   color:#36A099; 
   font-family: 'Lilita One', cursive;
   margin-left: 25%;
-  font-size: 20px;
 }
 
 .header {
@@ -247,7 +251,7 @@ button {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
-  font-size: 16px;
+  font-size: 1.8em;
 }
 
 .navbar-hidden img {
@@ -279,7 +283,7 @@ button {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
-  font-size: 18px;
+  font-size: .9em;
 }
 
 #work h2 {
@@ -388,7 +392,7 @@ button {
 
 #about h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.5em;
   margin-bottom: 45px;
 }
 
@@ -449,7 +453,7 @@ button {
   color: #36A099;
   width: 90px;
   height: 50px;
-  font-size: 18px;
+  font-size: .9em;
   line-height: 50px;
   text-align: center;
   border-radius: 10px;
@@ -471,7 +475,7 @@ button {
 #divider-contact {
   margin-top:20px;
   color: #fff;
-  font-size: 14px;
+  font-size: .7em;
   float:right;
   margin-right: 200px;
 
@@ -571,4 +575,11 @@ button {
   border-radius: 12px;
 
   display: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    /* double font size for mobile users */
+    font-size: 2em;
+  }
 }
