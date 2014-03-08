@@ -10,6 +10,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'quicksandbold';
     src: url('fonts/quicksand/quicksand-bold-webfont.eot');
@@ -20,6 +21,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'quicksanditalic';
     src: url('fonts/quicksand/quicksand-italic-webfont.eot');
@@ -30,6 +32,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'quicksandregular';
     src: url('fonts/quicksand/quicksand-regular-webfont.eot');
@@ -39,16 +42,14 @@
          url('fonts/quicksand/quicksand-regular-webfont.svg#quicksandregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-
 .clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 * {
@@ -467,7 +468,6 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
 }
 
-
 #divider-contact .row{
   overflow:hidden;
 }
@@ -482,6 +482,13 @@ button {
 }
 
 /* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+  body {
+    /* double font size for mobile users */
+    font-size: 2em;
+  }
+}
 
 @media only screen and (max-width: 809px) {
   #contact {
@@ -517,13 +524,6 @@ button {
   }
 }
 
-@media only screen and (max-width: 1130px) {
-  .navbar {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
 @media only screen and (max-width: 937px) {
   .fa {
     font-size: 80%;
@@ -544,21 +544,17 @@ button {
   }
 }
 
-@media only screen and (max-width: 1127px) {
+@media only screen and (max-width: 1130px) {
+  .navbar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   .logo {
     width: 100%;
   }
 }
 
-.has-success {
-  background: green;
-  color: #fff;
-}
-.has-error {
-  background: rgba(255,0,0,.6);
-  color: #fff;
-}
-
+/*POP UP FOR EMAIL*/
 .modal {
   position: fixed;
   width: 320px;
@@ -575,11 +571,4 @@ button {
   border-radius: 12px;
 
   display: none;
-}
-
-@media (max-width: 767px) {
-  body {
-    /* double font size for mobile users */
-    font-size: 2em;
-  }
 }
