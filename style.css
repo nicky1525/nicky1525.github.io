@@ -65,7 +65,8 @@
 }
 
 html {
-  background: #36A099;  
+  background: #36A099;
+   -webkit-font-smoothing: antialiased;  
 }
 
 body {
