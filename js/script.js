@@ -2,24 +2,24 @@ var previousScroll = 0,
       headerOrgOffset = $('#work').height() + $('.presentation').height();
 
 
-  $(window).scroll(function() {
-      var currentScroll = $(this).scrollTop();
-      if (currentScroll > headerOrgOffset) {
-          if (currentScroll < previousScroll) {
-              $('.navbar-hidden').animate({
-                   top: '-70px'      //Change to Height of navbar
-              }, 1000);               //Mess with animate time
-          } else {
-              $('.navbar-hidden').animate({
-                   top: '0'
-              },1000);
-              $('.navbar-hidden').addClass('fixed');
-          }
-      } else {
-           $('.navbar-hidden').removeClass('fixed');   
-      }
-      previousScroll = currentScroll;
-  });
+$(window).scroll(function() {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > headerOrgOffset) {
+        if (currentScroll < previousScroll) {
+            $('.navbar-hidden').animate({
+                 top: '-70px'      //Change to Height of navbar
+            }, 1000);               //Mess with animate time
+        } else {
+            $('.navbar-hidden').animate({
+                 top: '0'
+            },1000);
+            $('.navbar-hidden').addClass('fixed');
+        }
+    } else {
+         $('.navbar-hidden').removeClass('fixed');   
+    }
+    previousScroll = currentScroll;
+});
 
 
 $("form").on("submit", function(event) {
