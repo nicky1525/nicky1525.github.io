@@ -226,7 +226,7 @@ button {
 
 /*NAVBAR HIDDEN*/
 
-.navbar.hidden {
+.header.hidden {
   position: fixed;
   padding-right: 10px;
   padding-left: 10px;
@@ -234,30 +234,31 @@ button {
   width: 100%;
   height: 70px;
   border-bottom:solid 1px #d1d1d1;
-  box-shadow: 10px 10px 5px #d1d1d1;
+  box-shadow: 10px 10px 5px rgba(0,0,0,.2);
+  z-index: 400;
 
 }
 
-.navbar.hidden ul {
+.header.hidden ul {
   list-style: none;
   float: right;
   width: 30%;
 }
 
-.navbar.hidden li {
+.header.hidden li {
   display: inline;
   float: left;
   width: 33%;
 }
 
-.navbar.hidden a {
+.header.hidden a {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
   font-size: 1.8em;
 }
 
-.navbar.hidden img {
+.header.hidden img {
   margin-left: 30px;
   height: 70px;
   width: 70px;

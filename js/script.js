@@ -1,26 +1,29 @@
 var previousScroll = 0,
-      headerOrgOffset = $('#work').height() + $('.presentation').height();
+      headerOffset = 100;
 
 
 $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
-    if (currentScroll > headerOrgOffset) {
-        if (currentScroll < previousScroll) {
-            $('.navbar-hidden').animate({
-                 top: '-70px'      //Change to Height of navbar
-            }, 1000);               //Mess with animate time
+    if (currentScroll > headerOffset) {
+        if (currentScroll > previousScroll) {
+            // $('.header').animate({
+            //      top: '0'      //Change to Height of navbar
+            // }, 1000); 
+            $('.header').addClass('hidden');              //Mess with animate time
         } else {
-            $('.navbar-hidden').animate({
-                 top: '0'
-            },1000);
-            $('.navbar-hidden').addClass('fixed');
+            // $('.header').animate({
+            //      top: '-70px'
+            // },1000);
+            $('.header').removeClass('hidden');
+            
         }
     } else {
-         $('.navbar-hidden').removeClass('fixed');   
+         $('.header').removeClass('hidden');   
     }
     previousScroll = currentScroll;
 });
 
+scroll();
 
 $("form").on("submit", function(event) {
   // prevent form submission
