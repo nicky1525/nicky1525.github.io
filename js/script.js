@@ -34,6 +34,14 @@ $( '.navanchor' ).on('click', function(event) {
   }, 2000);
 });
 
+$( '#colibrihome' ).on('click', function(event) {
+  event.preventDefault();
+  var target = $(this).attr('href');
+  $('html, body').animate({
+      scrollTop: $(target).offset().top-100
+  }, 2000);
+});
+
 function showborder() {     
     $(".expand1").css("background","#36A099");
 
