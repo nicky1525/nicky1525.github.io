@@ -227,7 +227,7 @@ button {
 
 /*NAVBAR HIDDEN*/
 
-.header.hidden {
+.header.fixed {
   position: fixed;
   top:0;
   left: 0;
@@ -245,35 +245,35 @@ button {
   line-height: 10px;
 }
 
-.header.hidden ul {
+.header.fixed ul {
   list-style: none;
  
 }
 
-.header.navbar.hidden {
+.header.navbar.fixed {
   float: right;
   width: 90%;
 }
 
-.header.logo.hidden {
+.header.logo.fixed {
   float: left;
   width: 10%;
 }
 
-.hidden li {
+.fixed li {
   display: inline;
   float: left;
   width: 33%;
 }
 
-.header.hidden a {
+.header.fixed a {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
   font-size: 1em;
 }
 
-.header.hidden img {
+.header.fixed img {
   margin-left: 60px;
   height: 50px;
   width: 50px;
@@ -281,7 +281,7 @@ button {
   display: inline;
 }
 
-.hidden h1 {
+.fixed h1 {
   display: none;
 }
 

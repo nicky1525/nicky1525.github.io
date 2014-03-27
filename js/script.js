@@ -1,18 +1,18 @@
 var previousScroll = 0,
-      headerOffset = 70;
+      headerOffset = 40;
 
 
 var scroll = $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
     if (currentScroll > headerOffset) {
       if (currentScroll > previousScroll) {
-          $('body').css("margin-top","100px");
-          $('.header').addClass('hidden');
+          $('body').css("margin-top","105px");
+          $('.header').addClass('fixed');
           $('#colibri').addClass('pop');              //Mess with animate time
         } 
     } else {
       $('body').css("margin-top","0");
-      $('.header').removeClass('hidden'); 
+      $('.header').removeClass('fixed'); 
       $('#colibri').removeClass('pop');   
     }
     previousScroll = currentScroll;
