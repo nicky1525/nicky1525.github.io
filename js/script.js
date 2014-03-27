@@ -2,6 +2,14 @@ var previousScroll = 0,
       headerOffset = 40;
 
 var scroll = $(window).scroll(function() {
+  $('.col-lg-4').each(function(){
+  var imagePos = $(this).offset().top;
+
+  var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow+400) {
+      $(this).addClass("fadeIn");
+    }
+  });
   var currentScroll = $(this).scrollTop();
   var workOffset = $("#work").offset().top;
   if (currentScroll > headerOffset) {
@@ -17,17 +25,6 @@ var scroll = $(window).scroll(function() {
   }
   previousScroll = currentScroll;
 });
-
-$(window).scroll(function() {
-    $('.col-lg-4').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
-        $(this).addClass("fadeIn");
-      }
-    });
-  });
 
 $( '.navanchor' ).on('click', function(event) {
   event.preventDefault();
