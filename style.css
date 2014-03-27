@@ -226,7 +226,8 @@ button {
 
 /*NAVBAR HIDDEN*/
 
-.navbar-hidden {
+.navbar.hidden {
+  position: fixed;
   padding-right: 10px;
   padding-left: 10px;
   background: rgba(255,255,255,1);
@@ -237,40 +238,31 @@ button {
 
 }
 
-.navbar-hidden ul {
+.navbar.hidden ul {
   list-style: none;
   float: right;
   width: 30%;
 }
 
-.navbar-hidden li {
+.navbar.hidden li {
   display: inline;
   float: left;
   width: 33%;
 }
 
-.navbar-hidden a {
+.navbar.hidden a {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
   font-size: 1.8em;
 }
 
-.navbar-hidden img {
+.navbar.hidden img {
   margin-left: 30px;
   height: 70px;
   width: 70px;
   float: left;
   display: inline;
-}
-
-.hidden {
-  display: none;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
 }
 
 /*WORK SECTION*/
