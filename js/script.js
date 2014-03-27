@@ -1,5 +1,5 @@
 var previousScroll = 0,
-      headerOffset = 40;
+      headerOffset = 60;
 
 
 var scroll = $(window).scroll(function() {
