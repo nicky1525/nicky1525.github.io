@@ -19,11 +19,11 @@ var scroll = $(window).scroll(function() {
 });
 
 $( '.navanchor' ).on('click', function(event) {
-    event.preventDefault();
-    var target = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(target).offset().top
-    }, 2000);
+  event.preventDefault();
+  var target = $(this).attr('href');
+  $('html, body').animate({
+      scrollTop: $(target).offset().top-60
+  }, 2000);
 });
 
 $("form").on("submit", function(event) {
