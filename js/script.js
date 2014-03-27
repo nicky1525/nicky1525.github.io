@@ -1,29 +1,22 @@
 var previousScroll = 0,
-      headerOffset = 100;
+      headerOffset = 70;
 
 
-$(window).scroll(function() {
+var scroll = $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
     if (currentScroll > headerOffset) {
         if (currentScroll > previousScroll) {
-            // $('.header').animate({
-            //      top: '0'      //Change to Height of navbar
-            // }, 1000); 
-            $('.header').addClass('hidden');              //Mess with animate time
-        } else {
-            // $('.header').animate({
-            //      top: '-70px'
-            // },1000);
-            $('.header').removeClass('hidden');
-            
-        }
+          // $('.header').animate({
+          //      top: '0'      //Change to Height of navbar
+          // }, 1000); 
+          $('.header').addClass('hidden');
+          $('#colibri').addClass('pop');              //Mess with animate time
+        } 
     } else {
          $('.header').removeClass('hidden');   
     }
     previousScroll = currentScroll;
 });
-
-scroll();
 
 $("form").on("submit", function(event) {
   // prevent form submission
