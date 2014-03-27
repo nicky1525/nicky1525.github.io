@@ -167,62 +167,15 @@ button {
 
 .presentation {
   position: relative;
+ 
 }
 
 .presentation > img {
   width: 100%;
-  border-top: solid 4px #36A099;
-  border-bottom: solid 4px #36A099;
+  margin-bottom: -10px;
 }
 
-/* Float Shadow effect*/
 
-.float-shadow {
-  display: inline-block;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.float-shadow:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  /* W3C */
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform, opacity;
-  transition-property: transform, opacity;
-}
-
-.float-shadow:hover {
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
-  /* move the element up by 5px */
-}
-
-.float-shadow:hover:before {
-  opacity: 1;
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-}
 
 /*NAVBAR FIXED*/
 
@@ -334,52 +287,6 @@ button {
   width: 190px;
 }
 
-/* Pop effect*/
-
-@-webkit-keyframes pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes pop {
-  50% {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.pop {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.pop:hover {
-  -webkit-animation-name: pop;
-  animation-name: pop;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
 
 /*DIVIDER*/
 
@@ -414,7 +321,7 @@ button {
   border: solid 5px #36A099;
 }
 
-/*CONTACT*/
+/*CONTACT SECTION*/
 
 #contact {
   background-color: #36A099;
@@ -483,6 +390,25 @@ button {
   float:right;
   margin-right: 200px;
 
+}
+
+/*POP UP FOR EMAIL*/
+.modal {
+  position: fixed;
+  width: 320px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -160px;
+  
+  background: rgba(255,255,255,1);
+  box-shadow: 0 0 36px 36px rgba(0,0,0,.1);
+  border-radius: 12px;
+
+  display: none;
 }
 
 /* MEDIA QUERIES */
@@ -572,28 +498,114 @@ button {
 
 }
 
-/*POP UP FOR EMAIL*/
-.modal {
-  position: fixed;
-  width: 320px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  margin-top: -120px;
-  margin-left: -160px;
-  
-  background: rgba(255,255,255,1);
-  box-shadow: 0 0 36px 36px rgba(0,0,0,.1);
-  border-radius: 12px;
+/*ANIMATIONS*/
 
-  display: none;
+/*
+==============================================
+Pop effect on anchors
+==============================================
+*/
+@-webkit-keyframes pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.pop {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pop:hover {
+  -webkit-animation-name: pop;
+  animation-name: pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+/*
+==============================================
+Float shadow on anchors
+==============================================
+*/
+.float-shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+.float-shadow:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+
+.float-shadow:hover:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 /*
 ==============================================
-fadeIn
+FadeIn work images
 ==============================================
 */
 
@@ -647,3 +659,71 @@ fadeIn
 }
 
 /*
+==============================================
+Loading borders presentation
+==============================================
+*/
+
+#content {
+  width: 100%;
+    /* Full Width */
+  height: 4px;
+  background: #fff;
+}
+
+.expand {
+  width: 100%;
+  height: 4px;
+  background: #36A099;
+  position: absolute;
+  -moz-animation: fullexpand 8s ease;
+  -webkit-animation: fullexpand 8s ease;
+}
+
+.expand1 {
+  width: 100%;
+  height: 4px;
+  background: #36A099;
+  position: absolute;
+  -moz-animation: fullexpandr 8s ease;
+  -webkit-animation: fullexpandr 8s ease;
+}
+
+/* Full Width Animation Bar */
+@-moz-keyframes fullexpand {
+    0%  { width: 0px;
+  }
+
+  100% {
+      width: 100%;
+  } 
+}
+
+@-webkit-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100%;
+    };
+}
+
+@-moz-keyframes fullexpandr {
+  0%  { width: 100%;
+  }
+
+  100% {
+      width: 0;
+  } 
+}
+
+@-webkit-keyframes fullexpandr {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    };
+}
