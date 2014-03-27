@@ -8,7 +8,7 @@ var scroll = $(window).scroll(function() {
       if (currentScroll > previousScroll) {
           $('body').css("margin-top","105px");
           $('.header').addClass('fixed');
-          $('#colibri').addClass('pop');              //Mess with animate time
+          $('#colibri').addClass('pop');
         } 
     } else {
       $('body').css("margin-top","0");
@@ -16,6 +16,14 @@ var scroll = $(window).scroll(function() {
       $('#colibri').removeClass('pop');   
     }
     previousScroll = currentScroll;
+});
+
+$( '.navanchor' ).on('click', function(event) {
+    event.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 2000);
 });
 
 $("form").on("submit", function(event) {
