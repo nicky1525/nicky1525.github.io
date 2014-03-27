@@ -5,15 +5,15 @@ var previousScroll = 0,
 var scroll = $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
     if (currentScroll > headerOffset) {
-        if (currentScroll > previousScroll) {
-          // $('.header').animate({
-          //      top: '0'      //Change to Height of navbar
-          // }, 1000); 
+      if (currentScroll > previousScroll) {
+          $('body').css("margin-top","100px");
           $('.header').addClass('hidden');
           $('#colibri').addClass('pop');              //Mess with animate time
         } 
     } else {
-         $('.header').removeClass('hidden');   
+      $('body').css("margin-top","0");
+      $('.header').removeClass('hidden'); 
+      $('#colibri').removeClass('pop');   
     }
     previousScroll = currentScroll;
 });
