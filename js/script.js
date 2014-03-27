@@ -1,22 +1,33 @@
 var previousScroll = 0,
-      headerOffset = 60;
-
+      headerOffset = 40;
 
 var scroll = $(window).scroll(function() {
-    var currentScroll = $(this).scrollTop();
-    if (currentScroll > headerOffset) {
-      if (currentScroll > previousScroll) {
-          $('body').css("margin-top","105px");
-          $('.header').addClass('fixed');
-          $('#colibri').addClass('pop');
-        } 
-    } else {
-      $('body').css("margin-top","0");
-      $('.header').removeClass('fixed'); 
-      $('#colibri').removeClass('pop');   
-    }
-    previousScroll = currentScroll;
+  var currentScroll = $(this).scrollTop();
+  var workOffset = $("#work").offset().top;
+  if (currentScroll > headerOffset) {
+    if (currentScroll > previousScroll) {
+        $('body').css("margin-top","105px");
+        $('.header').addClass('fixed');
+        $('#colibri').addClass('pop');
+      } 
+  }else {
+    $('body').css("margin-top","0");
+    $('.header').removeClass('fixed'); 
+    $('#colibri').removeClass('pop');   
+  }
+  previousScroll = currentScroll;
 });
+
+$(window).scroll(function() {
+    $('.col-lg-4').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("fadeIn");
+      }
+    });
+  });
 
 $( '.navanchor' ).on('click', function(event) {
   event.preventDefault();
@@ -25,6 +36,7 @@ $( '.navanchor' ).on('click', function(event) {
       scrollTop: $(target).offset().top-60
   }, 2000);
 });
+
 
 $("form").on("submit", function(event) {
   // prevent form submission
