@@ -34,6 +34,15 @@ $( '.navanchor' ).on('click', function(event) {
   }, 2000);
 });
 
+function showborder() {     
+    $(".expand1").css("background","#36A099");
+
+}
+
+ // use setTimeout() to execute
+ setTimeout(showborder, 8000);
+
+
 
 $("form").on("submit", function(event) {
   // prevent form submission
