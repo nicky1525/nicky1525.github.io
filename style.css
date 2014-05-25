@@ -175,7 +175,13 @@ button {
   margin-bottom: -9px;
 }
 
+fa-stack-1x {
+  width: auto;
+}
 
+fa {
+  transition: all .3s ease-out;
+}
 
 /*NAVBAR FIXED*/
 
@@ -677,8 +683,6 @@ Loading borders presentation
   height: 4px;
   background:#36A099;
 }
-
-
 
 .expand {
   width: 100%;
