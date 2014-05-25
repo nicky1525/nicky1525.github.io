@@ -175,11 +175,11 @@ button {
   margin-bottom: -9px;
 }
 
-fa-stack-1x {
+.fa-stack-1x {
   width: auto;
 }
 
-fa {
+.fa {
   transition: all .3s ease-out;
 }
 
