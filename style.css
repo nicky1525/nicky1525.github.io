@@ -322,6 +322,8 @@ button {
 
 #about img {
   float: left;
+  height: 230px;
+  width: 230px;
   margin:0 40px 40px 40px;
   border-radius: 400px;
   border: solid 5px #36A099;
