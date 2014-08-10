@@ -167,6 +167,7 @@ button {
 
 .presentation {
   position: relative;
+  margin-bottom: 2em;
  
 }
 
@@ -262,7 +263,7 @@ button {
 }
 
 #work p {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   padding:10px;
 }
 
