@@ -401,6 +401,10 @@ button {
 
 }
 
+.heart {
+  width: 1em;
+}
+
 /*POP UP FOR EMAIL*/
 .modal {
   position: fixed;
