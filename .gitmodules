@@ -1,3 +1,6 @@
 [submodule "rock-paper-scissors"]
 	path = rock-paper-scissors
 	url = https://github.com/nicky1525/Rock-Paper-Scissors.git
+[submodule "my-cv-template"]
+	path = my-cv-template
+	url = https://github.com/nicky1525/my-cv-template.git
