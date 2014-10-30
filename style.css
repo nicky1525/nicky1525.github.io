@@ -93,6 +93,13 @@ button {
   display: block;
 }
 
+@media only screen and (min-width: 768px) {
+  #wrapper {
+    width: 69%;
+    margin: auto;
+  }
+}
+
 .navbar a {
   text-decoration: none;
   color:#36A099; 
