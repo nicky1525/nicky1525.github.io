@@ -104,7 +104,7 @@ button {
   text-decoration: none;
   color:#36A099; 
   font-family: 'Lilita One', cursive;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .header {
@@ -147,7 +147,7 @@ button {
 
 .navbar li {
   float: left;
-  width: 33%;
+  width: 25%;
 }
 
 .social {
@@ -225,7 +225,7 @@ button {
 .fixed li {
   display: inline;
   float: left;
-  width: 33%;
+  width: 25%;
 }
 
 .header.fixed a {
@@ -335,6 +335,45 @@ button {
   margin:0 40px 40px 40px;
   border-radius: 400px;
   border: solid 5px #36A099;
+}
+
+/*PORTFOLIO SECTION*/
+#portfolio {
+  text-align: justify;
+  margin-bottom: 60px;
+  padding: 0 50px 0 50px;
+}
+
+#portfolio h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 45px;
+}
+.cell {
+  width: 50%;
+  float: left;
+}
+
+.cell:nth-child(even) {
+  /*background: rgba(0,255,0,.1);*/
+  padding-right: 3%;
+}
+.cell:nth-child(odd) {
+  padding-left: 3%;
+}
+
+.appicon {
+  margin-top: 20px;
+  float: left;
+}
+
+.stores {
+  margin-left: 40%;
+}
+
+.stores a {
+  float: left;
+  display: block;
 }
 
 /*CONTACT SECTION*/
