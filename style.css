@@ -350,6 +350,13 @@ button {
   margin-bottom: 45px;
 }
 
+#portfolio a {
+  text-decoration: none;
+  color:#36A099; 
+  font-family: 'Lilita One', cursive;
+  font-size: .9em;
+}
+
 
 /*CONTACT SECTION*/
 
