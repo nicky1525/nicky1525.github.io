@@ -26,7 +26,7 @@
 			$response = "Your message has been sent successfully!";
 		} else {
 			 $response = "Fail. Please try again.";
-			 echo 'Mailer error: ' . $mail->ErrorInfo;
+			 error_log('Mailer error: ' . $mail->ErrorInfo);
 		}
 	}
 	else {
