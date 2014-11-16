@@ -57,7 +57,7 @@ $("form").on("submit", function(event) {
   event.preventDefault();
 
   // send an email via AJAX
-  $.ajax("mailer.php", {
+  $.ajax("phpMailer.php", {
     type: "POST",
     data: $(this).serialize()
   }).success(function(data) {
