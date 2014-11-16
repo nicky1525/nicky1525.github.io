@@ -62,9 +62,13 @@ $("form").on("submit", function(event) {
     data: $(this).serialize()
   }).success(function(data) {
 
-    $("input[type=text], textarea, input[type=email]").val("");
     var jsonString = JSON.parse(data);
     $(".modal").html(jsonString.message).fadeIn().delay(2000).fadeOut('slow');
+
+    if (jsonString.isSent) {
+      // clear form fields
+      $("input[type=text], textarea, input[type=email]").val("");
+    }
 
   });
 });
