@@ -1,5 +1,7 @@
 <?php
 	require("class.phpmailer.php");
+	require("class.smtp.php");
+
 	$mail = new PHPMailer();
 	$mail->IsSMTP();  // telling the class to use SMTP
 
