@@ -5,8 +5,14 @@
 	$mail = new PHPMailer();
 	$mail->IsSMTP();  // telling the class to use SMTP
 
-	$mail->Host     = "smtp2.servage.net"; // SMTP server
-
+	$password = getenv('SMTP_PW'); 
+	$mail->Host     = "smtp2.servage.net;smtp1.servage.net"; // SMTP server
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = 'nicole@delafeld.it'; 
+	               // SMTP username
+	$mail->Password = $password;                           // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 465;
 	$recipient_email = "nicole@delafeld.it";
 	$sender_name = isset($_POST['name']) ? trim($_POST['name']) : '';
 	$sender_email = isset($_POST['email']) ? trim($_POST['email']) : '';
@@ -14,6 +20,7 @@
 	$header = "\"$sender_name\" <$sender_email>";
 	$mail->From     = $header;
 	$mail->addAddress($recipient_email);
+	
 	 
 	$mail->Subject  = "Nuovo messaggio da delafeld.it!";
 
