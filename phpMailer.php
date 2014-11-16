@@ -7,12 +7,13 @@
 
 	$mail->Host     = "smtp2.servage.net"; // SMTP server
 
-	 
+	$recipient_email = "nicole@delafeld.it";
 	$sender_name = isset($_POST['name']) ? trim($_POST['name']) : '';
 	$sender_email = isset($_POST['email']) ? trim($_POST['email']) : '';
 	$message = isset($_POST['message']) ? trim($_POST['message']) : '';
 	$header = "From: \"$sender_name\" <$sender_email>";
 	$mail->From     = $header;
+	$mail->addAddress($recipient_email);
 	 
 	$mail->Subject  = "Nuovo messaggio da delafeld.it!";
 
