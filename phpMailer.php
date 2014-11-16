@@ -34,5 +34,5 @@
 	}
 	// our bool flag is isSent, and it's true if the message has been delivered
 	// correctly; false otherwise.
-	echo '{"isSent":"' . $isSent . '", "message":"' . $response . '"}';
+	echo '{"isSent":"' . $isSent . '","message":"' . $response . '"}';
 ?>
