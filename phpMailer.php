@@ -11,8 +11,8 @@
 	$mail->Username = 'nicole@delafeld.it'; 
 	               // SMTP username
 	$mail->Password = $password;                           // SMTP password
-	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-	$mail->Port = 465;
+	// $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	// $mail->Port = 465;
 	$recipient_email = "nicole@delafeld.it";
 	$sender_name = isset($_POST['name']) ? trim($_POST['name']) : '';
 	$sender_email = isset($_POST['email']) ? trim($_POST['email']) : '';
