@@ -8,13 +8,14 @@
 	 
 	$sender_name = isset($_POST['name']) ? trim($_POST['name']) : '';
 	$sender_email = isset($_POST['email']) ? trim($_POST['email']) : '';
+	$message = isset($_POST['message']) ? trim($_POST['message']) : '';
 	$header = "From: \"$sender_name\" <$sender_email>";
 	$mail->From     = $header;
 	 
 	$mail->Subject  = "Nuovo messaggio da delafeld.it!";
 
-	$mail->Body     = isset($_POST['message']) ? trim($_POST['message']) : '';
-	
+	$mail->Body     = $message;
+
 	$isSent = false;
 
 	if(!empty($sender_name) && !empty($sender_email) && !empty($message)) {
