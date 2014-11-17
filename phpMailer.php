@@ -3,7 +3,6 @@
 	require("class.smtp.php");
 
 	$mail = new PHPMailer();
-	$mail->SMTPDebug = true;
 	$mail->IsSMTP();  // telling the class to use SMTP
 
 	$password = getenv('SMTP_PW'); 
@@ -11,7 +10,7 @@
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'nicole@delafeld.it'; 
 
-	               // SMTP username
+	 // SMTP username
 	$mail->Password = $password;                           // SMTP password
 	$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 465;
@@ -20,11 +19,11 @@
 	$sender_email = isset($_POST['email']) ? trim($_POST['email']) : '';
 	$message = isset($_POST['message']) ? trim($_POST['message']) : '';
 	$header = "\"$sender_name\" <$sender_email>";
-	$mail->From     = $header;
+	$mail->From = 'info@delafeld.it';
 	$mail->addAddress($recipient_email);
 	
 	 
-	$mail->Subject  = "Nuovo messaggio da delafeld.it!";
+	$mail->Subject  = "Nuovo messaggio da $header";
 
 	$mail->Body     = $message;
 
