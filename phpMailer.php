@@ -3,12 +3,14 @@
 	require("class.smtp.php");
 
 	$mail = new PHPMailer();
+	$mail->SMTPDebug = true;
 	$mail->IsSMTP();  // telling the class to use SMTP
 
 	$password = getenv('SMTP_PW'); 
 	$mail->Host     = "smtp2.servage.net;smtp1.servage.net"; // SMTP server
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'nicole@delafeld.it'; 
+
 	               // SMTP username
 	$mail->Password = $password;                           // SMTP password
 	// $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
