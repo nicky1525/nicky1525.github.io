@@ -94,6 +94,35 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+  .cell {
+  width: 50%;
+  float: left;
+  }
+
+  .cell:nth-child(even) {
+    /*background: rgba(0,255,0,.1);*/
+    padding-right: 3%;
+  }
+  .cell:nth-child(odd) {
+    padding-left: 3%;
+  }
+
+  .appicon {
+    margin-top: 20px;
+    float: left;
+  }
+
+  .stores {
+    margin-left: 40%;
+  }
+
+  .stores a {
+    float: left;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
   #wrapper {
     width: 69%;
     margin: auto;
@@ -535,36 +564,6 @@ button {
 
   .header.fixed {
     height: 100px;
-  }
-
-}
-
-@media only screen and (min-width: 1348px) {
-  .cell {
-  width: 50%;
-  float: left;
-  }
-
-  .cell:nth-child(even) {
-    /*background: rgba(0,255,0,.1);*/
-    padding-right: 3%;
-  }
-  .cell:nth-child(odd) {
-    padding-left: 3%;
-  }
-
-  .appicon {
-    margin-top: 20px;
-    float: left;
-  }
-
-  .stores {
-    margin-left: 40%;
-  }
-
-  .stores a {
-    float: left;
-    display: block;
   }
 
 }
