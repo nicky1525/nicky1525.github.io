@@ -94,6 +94,7 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+
   .cell {
   width: 50%;
   float: left;
